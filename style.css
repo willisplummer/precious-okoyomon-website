@@ -17,13 +17,16 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   font-size: 18px;
   position: relative;
-  background-color: white;
+  background: #e8ffbd;
   color: black;
   margin: 0;
   padding: 0px 0px 63px;
   overflow: hidden;
 }
 
+html, body {
+  cursor: url("http://cur.cursors-4u.net/nature/nat-11/nat1021.cur"), default;
+}
 
 /* NAVS */
 
@@ -33,7 +36,6 @@ header {
   left: 0;
   right: 0;
   padding: 5px 10px;
-  background: white;
   color: black;
   display: flex;
   align-items: center;
@@ -42,15 +44,15 @@ header {
 }
 
 a:hover, button:hover {
-  color: #ffaaa5;
+  color:	#bde8ff;
   cursor: pointer;
 }
 
 header h1 {
-  font-size: 28px;
+  font-size: 32px;
   padding: 0;
   margin: 0;
-  color: #ff8b94;
+  color: #ffaaa5;
 }
 
 .header-nav {
@@ -69,87 +71,53 @@ footer {
   bottom: 0;
   left: 0;
   right: 0;
-  padding: 5px;
-  height: 25px;
-  background: white;
+  padding: 10px;
+  background: #ffe8bd;
   color: black;
-  font-size: 10px;
+  font-size: 14px;
   text-align: center;
 }
 
-
-/* CONTENT */
-
-
-#home, #about, #signup {
-  position: fixed;
-  top: 50;
-  left: 0;
-  right: 0;
-  bottom: 0;
-}
-
-#home {
-  height: 100%;
-  overflow: hidden;
-}
-
-/* HOME */
-
-#home .row {
+footer nav {
   display: flex;
   align-items: center;
-  justify-content: space-around;
-  background: white;
-  padding: 15px 0px;
-}
-
-#home .row .square {
-  width: 15vw;
-  height: 15vw;
-  background-color: #a8e6cf;
-  border-radius: 10px;
-  -webkit-transition: all 1s, height .3s, width .3s; /* Safari */
-  transition: all 1s, height .3s, width .3s;
-}
-
-#home .row .square:hover {
-  border-radius: 120px;
-}
-
-.hide {
-  display: none;
-}
-
-/* CONTENT */
-
-.content {
-  padding: 30px;
-  overflow: scroll;
-}
-
-.content h2 {
-  font-size: 20px;
+  justify-content: center;
+  margin: 0;
   padding: 0;
-  margin: 10px 0;
-  color: black;
 }
 
-.content p {
-  font-size: 16px;
-  font-weight: 300;
-  color: black;
+footer nav a {
+  padding: 0px 10px;
+  color: #ffaaa5;
 }
 
-.content img {
-  display: block;
-  margin: 0 auto 0 auto;
-  width: 85vw;
-  max-width: calc(70vh * (3/2));
-  height: calc(90vw * (2/3));
-  max-height: 70vh;
+/* MAIN */
+
+main {
+  padding: 50px;
 }
 
-.center {
-  text-align: center;
+main h2 {
+  font-size: 22px;
+  color: #ffd3b6;
+  text-decoration: underline;
+}
+
+main ul li{
+  list-style: none;
+  font-size: 22px;
+}
+
+main ul li:before{
+  content: '';
+  display: inline-block;
+  height: 1em;
+  width: 1em;
+  background-image: url("https://cdn3.iconfinder.com/data/icons/line/36/sheep-256.png");
+  background-size:contain;
+  background-repeat:no-repeat; 
+}
+
+main ul li a {
+  color: #e3b1ff;
 }
