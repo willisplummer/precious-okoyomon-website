@@ -1,0 +1,155 @@
+:root {
+  font: 500 16px 'Open Sans', sans-serif;
+}
+
+html {
+  box-sizing: border-box;
+  height: 100%;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  height: 100%;
+  max-height: 100%;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-size: 18px;
+  position: relative;
+  background-color: white;
+  color: black;
+  margin: 0;
+  padding: 0px 0px 63px;
+  overflow: hidden;
+}
+
+
+/* NAVS */
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 5px 10px;
+  background: white;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 2px solid #ffd3b6;
+}
+
+a:hover, button:hover {
+  color: #ffaaa5;
+  cursor: pointer;
+}
+
+header h1 {
+  font-size: 28px;
+  padding: 0;
+  margin: 0;
+  color: #ff8b94;
+}
+
+.header-nav {
+  list-style-type: none;  
+  display: flex;
+  margin: 0;
+}
+
+.header-nav li {
+  padding: 5px 10px;
+  font-weight: 600;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 5px;
+  height: 25px;
+  background: white;
+  color: black;
+  font-size: 10px;
+  text-align: center;
+}
+
+
+/* CONTENT */
+
+
+#home, #about, #signup {
+  position: fixed;
+  top: 50;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+#home {
+  height: 100%;
+  overflow: hidden;
+}
+
+/* HOME */
+
+#home .row {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background: white;
+  padding: 15px 0px;
+}
+
+#home .row .square {
+  width: 15vw;
+  height: 15vw;
+  background-color: #a8e6cf;
+  border-radius: 10px;
+  -webkit-transition: all 1s, height .3s, width .3s; /* Safari */
+  transition: all 1s, height .3s, width .3s;
+}
+
+#home .row .square:hover {
+  border-radius: 120px;
+}
+
+.hide {
+  display: none;
+}
+
+/* CONTENT */
+
+.content {
+  padding: 30px;
+  overflow: scroll;
+}
+
+.content h2 {
+  font-size: 20px;
+  padding: 0;
+  margin: 10px 0;
+  color: black;
+}
+
+.content p {
+  font-size: 16px;
+  font-weight: 300;
+  color: black;
+}
+
+.content img {
+  display: block;
+  margin: 0 auto 0 auto;
+  width: 85vw;
+  max-width: calc(70vh * (3/2));
+  height: calc(90vw * (2/3));
+  max-height: 70vh;
+}
+
+.center {
+  text-align: center;
+}
