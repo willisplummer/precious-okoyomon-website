@@ -1,5 +1,3 @@
-# Demo Squares Site
-
 ## To Run
 
 ```
