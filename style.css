@@ -110,10 +110,11 @@ main ul li{
 
 main ul li:before{
   content: '';
+  background-position-y: center;
   display: inline-block;
   height: 1em;
   width: 1em;
-  background-image: url("https://cdn3.iconfinder.com/data/icons/line/36/sheep-256.png");
+  background-image: url("https://cdn3.iconfinder.com/data/icons/animals-39/64/_Sheep-128.png");
   background-size:contain;
   background-repeat:no-repeat; 
 }
