@@ -21,7 +21,7 @@ body {
   color: black;
   margin: 0;
   padding: 0px 0px 63px;
-  overflow: hidden;
+  overflow: auto;
 }
 
 html, body {
@@ -67,7 +67,6 @@ header h1 {
 }
 
 footer {
-  position: fixed;
   bottom: 0;
   left: 0;
   right: 0;
