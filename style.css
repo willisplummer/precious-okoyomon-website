@@ -31,10 +31,6 @@ html, body {
 /* NAVS */
 
 header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
   padding: 5px 10px;
   color: black;
   display: flex;
@@ -70,10 +66,9 @@ footer {
   bottom: 0;
   left: 0;
   right: 0;
-  padding: 10px;
-  background: #ffe8bd;
-  color: black;
-  font-size: 14px;
+  padding: 14px;
+  background: hsl(39, 100%, 87%);
+  font-size: 18px;
   text-align: center;
 }
 
@@ -93,7 +88,7 @@ footer nav a {
 /* MAIN */
 
 main {
-  padding: 50px;
+  padding: 30px;
 }
 
 main h2 {
